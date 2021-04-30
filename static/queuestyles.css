@@ -85,10 +85,15 @@ body {
     justify-content: center;
     height: 70vh;
     position: relative;
+}
+
+.fillup img:hover{
+    content: url("/img/fillupTroll.png");
     -webkit-box-shadow: 1px 5px 70px 17px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 5px 70px 17px rgba(0,0,0,0.75);
     box-shadow: 1px 5px 70px 17px rgba(0,0,0,0.75);
 }
+
 
 
 .pawns {
