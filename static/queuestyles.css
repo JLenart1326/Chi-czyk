@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/img/chinolbg.jpg');
+    background-size: 100vw 100vh;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 10%;
+}
+.mainBoard {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    position: relative;
+    border-radius: 5px;
+}
+.mainBoard img {
+    height: 100%;
+}
+.listPlayers {
+    width: 100%;
+    min-height: 75px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('/img/navbar.jpg');
+    background-size: 100vw 12vh;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1em;
+    border: 3px solid black;
+    -webkit-box-shadow: -1px 6px 14px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 6px 14px 2px rgba(0,0,0,0.75);
+    box-shadow: -1px 6px 14px 2px rgba(0,0,0,0.75);
+}
+.player {
+    padding: 10px 20px;
+    border: 3px solid black;
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+    height: 5%;
+    margin: 0.3em;
+    font-size: 1.2em;
+    border-radius: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+.cube{
+    margin-top: 2em;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cube button {
+    padding: 1em;
+    background: rgb(221, 221, 221);
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: 3px solid black;
+}
+.cube button:active {
+    background: darkgray;
+}
+.cube img {
+    width: 75%;
+}
+.fillup img{
+    transform: scale(1);
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    position: relative;
+    -webkit-box-shadow: 1px 5px 70px 17px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 5px 70px 17px rgba(0,0,0,0.75);
+    box-shadow: 1px 5px 70px 17px rgba(0,0,0,0.75);
+}
+
+
+.pawns {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.pawn {
+    position: absolute;
+    width: 6.5%;
+    height: 6.5%;
+    border-radius: 50%;
+    border: 5px outset #333;
+    box-shadow: 4px 4px 10px black;
+}
+
+.pawn::before {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.indicator {
+    width: 6.5%;
+    height: 6.5%;
+    border-radius: 50%;
+    position: absolute;
+    animation: indicator .5s infinite alternate;
+    cursor: pointer;
+}
+
+@keyframes indicator {
+    100% {
+        opacity: 1;
+    }
+}

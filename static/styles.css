@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: url('/img/chinolbg.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.setup {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    border: 5px solid black;
+    border-radius: 10px;
+    align-items: center;
+}
+#enter {
+    font-size: 2em;
+    margin: 2em;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: .2em 1em;
+    outline: none;
+    background: rgb(221, 221, 221);
+    border: 2px outset rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+#enter:active {
+    background: darkgray;
+}
+
+#inputNickname {
+    font-size: 2em;
+    background: none;
+    outline: none;
+    margin-top: 5%;
+    color: rgb(206, 206, 206);
+    border: none;
+    border-bottom: 3px solid rgb(158, 158, 158);
+    border-radius: 5px;
+}
+
+#inputNickname:focus {
+    border-bottom: 5px solid rgb(97, 97, 97);
+    color: rgb(97, 97, 97);
+}
+
